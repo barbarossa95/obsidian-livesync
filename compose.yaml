@@ -3,11 +3,10 @@
 # Команда запуска: docker compose up -d
 # Приложение: https://obsidian-livesync.${DOMAIN}
 
-version: "3.8"
-
 services:
   couchdb-obsidian-livesync:
     image: docker.io/oleduc/docker-obsidian-livesync-couchdb:master
+    platform: linux/amd64
     container_name: obsidian-livesync
     environment:
       SERVER_URL: ${SERVER_URL}
