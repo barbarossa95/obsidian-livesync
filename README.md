@@ -27,3 +27,7 @@ deno run --minimum-dependency-age=0 --allow-env https://raw.githubusercontent.co
 ## TO DO
 
 - [x] ~~remote server configuration playbook~~ github actions
+- [ ] Авто-компактизация
+- [ ] инструкция добавления новых баз в существующий инстанс
+- [ ] автобекап данных
+
