@@ -23,7 +23,7 @@ services:
     labels:
       - "traefik.enable=true"
       # The Traefik Network
-      - "traefik.docker.network=proxy"
+      - "traefik.docker.network=traefik-public"
       # Don't forget to replace 'obsidian-livesync.example.org' with your own domain
       - "traefik.http.routers.obsidian-livesync.rule=Host(`obsidian-livesync.${DOMAIN:?DOMAIN must be set}`)"
       # The 'websecure' entryPoint is basically your HTTPS entrypoint. Check the next code snippet if you are encountering problems only; you probably have a working traefik configuration if this is not your first container you are reverse proxying.
